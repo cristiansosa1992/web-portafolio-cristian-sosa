@@ -69,7 +69,7 @@ a:focus-visible {
 
 .header h1 {
   margin: 0;
-  font: 800 38px "Manrope", sans-serif;
+  font: 800 clamp(26px, 3vw, 38px) "Manrope", sans-serif;
   letter-spacing: -3px;
 }
 
@@ -82,7 +82,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 36px;
-  font-size: 14px;
+  font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
   font-weight: 600;
 }
 
@@ -107,7 +107,7 @@ nav a:hover,
 }
 
 .eyebrow {
-  font-size: 11px;
+  font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   font-weight: 700;
   letter-spacing: 2px;
   display: flex;
@@ -155,7 +155,7 @@ em {
 
 .intro {
   max-width: 470px;
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
   color: var(--muted);
   line-height: 1.85;
 }
@@ -173,7 +173,7 @@ em {
   align-items: center;
   justify-content: center;
   gap: 27px;
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   font-weight: 600;
   padding: 15px 23px;
   border: 1px solid var(--accent);
@@ -198,7 +198,7 @@ em {
 }
 
 .text-link {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   font-weight: 600;
 }
 
@@ -206,7 +206,7 @@ em {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: 11px;
+  font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   color: var(--muted);
   margin-top: 41px;
 }
@@ -235,7 +235,7 @@ em {
   display: flex;
   justify-content: space-between;
   padding: 17px 5px;
-  font-size: 10px;
+  font-size: clamp(10px, calc(10px + 0 * (100vw - 320px) / 860), 10px);
   gap: 12px;
 }
 
@@ -255,7 +255,7 @@ em {
   height: 106px;
   display: grid;
   place-content: center;
-  font-size: 11px;
+  font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   letter-spacing: 1px;
   transform: rotate(-9deg);
 }
@@ -289,7 +289,7 @@ h2 {
 }
 
 .section-heading > p {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   line-height: 1.8;
   color: var(--muted);
   margin: 0;
@@ -372,33 +372,33 @@ h2 {
 .project-number {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   letter-spacing: 1px;
   color: var(--muted);
   margin-bottom: 20px;
 }
 
 .project-number span {
-  font-size: 9px;
+  font-size: clamp(10px, calc(10px + -1 * (100vw - 320px) / 860), 9px);
   font-weight: 700;
 }
 
 .project h3 {
-  font-size: 25px;
+  font-size: clamp(22px, calc(22px + 3 * (100vw - 320px) / 860), 25px);
   letter-spacing: -0.8px;
   line-height: 1.25;
   margin-bottom: 13px;
 }
 
 .project .project-name {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   color: var(--accent);
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .project-content > p:not(.project-number):not(.project-name) {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   color: var(--muted);
   line-height: 1.85;
   margin-bottom: 18px;
@@ -414,7 +414,7 @@ h2 {
 }
 
 .tags li {
-  font-size: 10px;
+  font-size: clamp(10px, calc(10px + 0 * (100vw - 320px) / 860), 10px);
   background: #e9ede6;
   border-radius: 4px;
   padding: 4px 9px;
@@ -427,7 +427,7 @@ h2 {
   gap: 25px;
   align-items: center;
   margin-top: auto;
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
   font-weight: 700;
 }
 
@@ -437,7 +437,7 @@ h2 {
 }
 
 .pending {
-  font-size: 11px;
+  font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   color: var(--muted);
   font-weight: 400;
 }
@@ -454,7 +454,7 @@ h2 {
   justify-content: space-between;
   border-bottom: 1px solid var(--line);
   padding: 15px 0;
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
 }
 
 .about {
@@ -469,13 +469,13 @@ h2 {
 }
 
 .about-copy > p {
-  font-size: 14px;
+  font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
   color: var(--muted);
   line-height: 1.9;
 }
 
 .about-copy > .large {
-  font-size: 22px;
+  font-size: clamp(19px, calc(19px + 3 * (100vw - 320px) / 860), 22px);
   color: var(--ink);
   line-height: 1.6;
   letter-spacing: -0.3px;
@@ -492,19 +492,19 @@ h2 {
 
 .background span {
   display: block;
-  font-size: 9px;
+  font-size: clamp(10px, calc(10px + -1 * (100vw - 320px) / 860), 9px);
   letter-spacing: 1.8px;
   color: var(--muted);
   margin-bottom: 7px;
 }
 
 .background strong {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   font-weight: 600;
 }
 
 .background p {
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
   margin: 4px 0 0;
   color: var(--muted);
 }
@@ -522,13 +522,13 @@ h2 {
 .contact > p:not(.eyebrow) {
   max-width: 480px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: clamp(13px, calc(13px + 2 * (100vw - 320px) / 860), 15px);
 }
 
 .email {
   display: inline-block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
   margin-top: 24px;
   overflow-wrap: anywhere;
 }
@@ -544,13 +544,13 @@ h2 {
 
 .footer p,
 .footer > a:last-child {
-  font-size: 10px;
+  font-size: clamp(10px, calc(10px + 0 * (100vw - 320px) / 860), 10px);
   color: var(--muted);
   margin: 0;
 }
 
 .footer .brand {
-  font-size: 30px;
+  font-size: clamp(26px, calc(26px + 4 * (100vw - 320px) / 860), 30px);
 }
 
 .skip {
@@ -585,13 +585,13 @@ h2 {
     padding-block: 60px;
   }
   .hero h1 {
-    font-size: 44px;
+    font-size: clamp(39px, calc(39px + 5 * (100vw - 320px) / 860), 44px);
     letter-spacing: -2px;
   }
   .portrait-label {
     width: 80px;
     height: 80px;
-    font-size: 9px;
+    font-size: clamp(10px, calc(10px + -1 * (100vw - 320px) / 860), 9px);
     left: -18px;
   }
   .hero-stack {
@@ -620,7 +620,7 @@ h2 {
     gap: 20px;
   }
   .project h3 {
-    font-size: 23px;
+    font-size: clamp(20px, calc(20px + 3 * (100vw - 320px) / 860), 23px);
   }
 }
 
@@ -635,13 +635,13 @@ h2 {
   }
   nav {
     gap: 12px;
-    font-size: 13px;
+    font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   }
   .nav-contact {
     padding: 8px 10px;
   }
   .header h1 {
-    font-size: 26px;
+    font-size: clamp(23px, calc(23px + 3 * (100vw - 320px) / 860), 26px);
     letter-spacing: -1.5px;
   }
   .hero {
@@ -654,12 +654,12 @@ h2 {
     letter-spacing: -1.8px;
   }
   .eyebrow {
-    font-size: 9px;
+    font-size: clamp(10px, calc(10px + -1 * (100vw - 320px) / 860), 9px);
     letter-spacing: 1.6px;
     margin-bottom: 21px;
   }
   .intro {
-    font-size: 15px;
+    font-size: clamp(13px, calc(13px + 2 * (100vw - 320px) / 860), 15px);
   }
   .hero-stack {
     margin-top: 29px;
@@ -675,7 +675,7 @@ h2 {
     border-radius: 130px 130px 5px 5px;
   }
   .portrait figcaption {
-    font-size: 8px;
+    font-size: clamp(10px, calc(10px + -2 * (100vw - 320px) / 860), 8px);
   }
   .section {
     padding-block: 50px;
@@ -685,7 +685,7 @@ h2 {
     margin-bottom: 27px;
   }
   h2 {
-    font-size: 31px;
+    font-size: clamp(27px, calc(27px + 4 * (100vw - 320px) / 860), 31px);
   }
   .project.featured {
     grid-template-columns: 1fr;
@@ -713,10 +713,10 @@ h2 {
     gap: 29px;
   }
   .about-copy > .large {
-    font-size: 20px;
+    font-size: clamp(18px, calc(18px + 2 * (100vw - 320px) / 860), 20px);
   }
   .contact h2 {
-    font-size: 40px;
+    font-size: clamp(35px, calc(35px + 5 * (100vw - 320px) / 860), 40px);
   }
   .contact .actions {
     gap: 15px;
@@ -731,7 +731,7 @@ h2 {
   .footer p {
     order: 3;
     width: 100%;
-    font-size: 9px;
+    font-size: clamp(10px, calc(10px + -1 * (100vw - 320px) / 860), 9px);
   }
   .footer > a:last-child {
     margin-left: auto;
@@ -769,15 +769,15 @@ h2 {
 }
 
 body {
-  font-size: 18px;
+  font-size: clamp(16px, calc(16px + 2 * (100vw - 320px) / 860), 18px);
 }
 
 nav {
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
 }
 
 h1 {
@@ -785,12 +785,12 @@ h1 {
 }
 
 .intro {
-  font-size: 19px;
+  font-size: clamp(17px, calc(17px + 2 * (100vw - 320px) / 860), 19px);
 }
 
 .button,
 .text-link {
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
 }
 
 .primary {
@@ -804,7 +804,7 @@ h1 {
 }
 
 .hero-stack {
-  font-size: 14px;
+  font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
 }
 
 .portrait {
@@ -820,7 +820,7 @@ h1 {
 }
 
 .portrait figcaption {
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
   padding: 17px 0;
 }
 
@@ -845,41 +845,41 @@ h1 {
 }
 
 .project-content > p:not(.project-number):not(.project-name) {
-  font-size: 17px;
+  font-size: clamp(15px, calc(15px + 2 * (100vw - 320px) / 860), 17px);
 }
 
 .project h3 {
-  font-size: 30px;
+  font-size: clamp(26px, calc(26px + 4 * (100vw - 320px) / 860), 30px);
 }
 
 .project .project-name {
-  font-size: 17px;
+  font-size: clamp(15px, calc(15px + 2 * (100vw - 320px) / 860), 17px);
 }
 
 .project-number {
-  font-size: 14px;
+  font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
 }
 
 .project-number span {
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
 }
 
 .tags li {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   background: #2b4035;
 }
 
 .project-links {
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
 }
 
 .pending {
-  font-size: 14px;
+  font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
 }
 
 .section-heading > p,
 .all-projects {
-  font-size: 17px;
+  font-size: clamp(15px, calc(15px + 2 * (100vw - 320px) / 860), 17px);
 }
 
 .about {
@@ -887,11 +887,11 @@ h1 {
 }
 
 .about-copy > p {
-  font-size: 18px;
+  font-size: clamp(16px, calc(16px + 2 * (100vw - 320px) / 860), 18px);
 }
 
 .about-copy > .large {
-  font-size: 25px;
+  font-size: clamp(22px, calc(22px + 3 * (100vw - 320px) / 860), 25px);
 }
 
 .background {
@@ -899,28 +899,28 @@ h1 {
 }
 
 .background span {
-  font-size: 12px;
+  font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
 }
 
 .background strong {
-  font-size: 17px;
+  font-size: clamp(15px, calc(15px + 2 * (100vw - 320px) / 860), 17px);
 }
 
 .background p {
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
 }
 
 .contact > p:not(.eyebrow) {
-  font-size: 19px;
+  font-size: clamp(17px, calc(17px + 2 * (100vw - 320px) / 860), 19px);
 }
 
 .email {
-  font-size: 16px;
+  font-size: clamp(14px, calc(14px + 2 * (100vw - 320px) / 860), 16px);
 }
 
 .footer p,
 .footer > a:last-child {
-  font-size: 13px;
+  font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
 }
 
 .skip {
@@ -932,7 +932,7 @@ h1 {
     gap: 30px;
   }
   .hero h1 {
-    font-size: 47px;
+    font-size: clamp(41px, calc(41px + 6 * (100vw - 320px) / 860), 47px);
   }
   .hero-stack {
     gap: 12px;
@@ -941,7 +941,7 @@ h1 {
     display: none;
   }
   .project h3 {
-    font-size: 27px;
+    font-size: clamp(24px, calc(24px + 3 * (100vw - 320px) / 860), 27px);
   }
   .actions {
     gap: 20px;
@@ -953,21 +953,21 @@ h1 {
 
 @media (max-width: 650px) {
   nav {
-    font-size: 13px;
+    font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
     gap: 12px;
   }
   .nav-contact {
     padding: 8px 10px;
   }
   .eyebrow {
-    font-size: 11px;
+    font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
     letter-spacing: 1.2px;
   }
   .hero h1 {
     font-size: clamp(40px, 10vw, 54px);
   }
   .intro {
-    font-size: 18px;
+    font-size: clamp(16px, calc(16px + 2 * (100vw - 320px) / 860), 18px);
   }
   .portrait {
     width: 100%;
@@ -978,28 +978,136 @@ h1 {
     border-radius: 0;
   }
   .portrait figcaption {
-    font-size: 11px;
+    font-size: clamp(10px, calc(10px + 1 * (100vw - 320px) / 860), 11px);
   }
   .hero-stack {
-    font-size: 13px;
+    font-size: clamp(11px, calc(11px + 2 * (100vw - 320px) / 860), 13px);
   }
   .project-content > p:not(.project-number):not(.project-name) {
-    font-size: 17px;
+    font-size: clamp(15px, calc(15px + 2 * (100vw - 320px) / 860), 17px);
   }
   .about-copy > .large {
-    font-size: 23px;
+    font-size: clamp(20px, calc(20px + 3 * (100vw - 320px) / 860), 23px);
   }
   .contact h2 {
-    font-size: 44px;
+    font-size: clamp(39px, calc(39px + 5 * (100vw - 320px) / 860), 44px);
   }
   .footer p {
-    font-size: 12px;
+    font-size: clamp(11px, calc(11px + 1 * (100vw - 320px) / 860), 12px);
   }
   .email {
-    font-size: 14px;
+    font-size: clamp(12px, calc(12px + 2 * (100vw - 320px) / 860), 14px);
   }
   .project-links {
     flex-wrap: wrap;
     gap: 16px;
+  }
+}
+
+.header {
+  gap: 24px;
+}
+
+.header h1,
+nav a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+nav {
+  gap: clamp(16px, 2.5vw, 36px);
+}
+
+.hero > *,
+.about-grid > * {
+  min-width: 0;
+}
+
+.project h3 {
+  font-size: clamp(24px, 2.4vw, 30px);
+}
+
+.contact .actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  align-items: stretch;
+}
+
+.contact .actions > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 13px 12px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(14px, 1.4vw, 16px);
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 5.3vw, 47px);
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 20px;
+    gap: 18px;
+  }
+
+  .header h1 {
+    font-size: clamp(26px, 6vw, 32px);
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: clamp(13px, 3.3vw, 16px);
+  }
+
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .nav-contact {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 9.5vw, 54px);
+  }
+
+  h2 {
+    font-size: clamp(28px, 6.5vw, 36px);
+  }
+
+  .contact h2 {
+    font-size: clamp(32px, 8vw, 44px);
+  }
+
+  .contact .actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .contact .actions > a {
+    gap: 8px;
+    padding-inline: 8px;
+    font-size: clamp(13px, 3.4vw, 16px);
   }
 }
